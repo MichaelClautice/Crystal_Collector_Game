@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<!-- "HOUSEKEEPING" CODE IN THE HEAD ELEMENT -->
+<head>
+<!-- Specify the character encoding for the HTML document: -->
+<!-- UTF-8 - Character encoding for Unicode: -->
+<meta charset="UTF-8">
+<!-- browser tab title -->
+    <title>Mike's Crystal Collector Game</title>
+
+<!-- LINK TO RESET.CSS (same as normalize.css) -->
+<!-- REMEMBER!: the link to reset.css needs to be ABOVE the other links - so it can run first
+
+The CSS Reset code defines baseline styles for HTML elements.
+
+Resetting these styles to one base evens out the differences, meaning fewer cross-browser issues when designing a website.
+-->
+<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+<!-- LINK TO BOOTSTRAP CSS CDN -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- LINK TO GOOGLE FONTS -->
+<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+
+<!-- LINK TO JQUERY CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- LINK TO MY EXTERNAL CSS FILE -->
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+<!-- "EVERTHANG" in this main div class container -->
+<div class="container text-center">
+<!-- a row class to hold a col-md-8 col-md-offset-2 -->
+    <div class="row text-center">
+<!-- an h1 for the top -->
+            <h1>Mike's Crystal Collector Game!</h1>
+<!-- click on the <h3> to "dropdown" a hidden set of instructions -->
+            <h3 class="dropdown">Click Here To Open &amp; Close Game Rules</h3>
+<!--<div class="instructions col-md-8 col-md-offset-2 text-center"> -->
+            <div class="instructions col-md-8 col-md-offset-2 text-center">
+                <p>• Match the number at the start of the game. </p>
+                <p>• Click on the crystals to get your total score to match that number.</p>
+                <p>• Clicking on a crystal will add a set amount of points to your total score.</p>
+                <p>• The value of each crystal is hidden from you until you click on it.</p>
+                <p>• Win the game by matching your total score to the random number.</p>
+                <p>• You lose the game if your total score goes above the random number.</p>
+                <p>• Each time the game starts, the crystals will get a new random value.</p>
+            </div><!-- close col-md-8 -->
+    </div><!-- close row -->
+<br><br>
+<!-- start crystal buttons here -->
+<!-- ea crystal button is in a col-md-2 class -->
+<div class="container"
+<div class= "row">
+                <div class="col-md-2 col-md-offset-2">
+                    <img class="blueCrystal" src="assets/images/blue.png">
+                </div>
+
+                <div class="col-md-2">
+                    <img class="redCrystal" src="assets/images/red.png">
+                </div>
+
+                <div class="col-md-2">
+                    <img class="yellowCrystal" src="assets/images/yellow.png">
+                </div>
+
+                <div class="col-md-2">
+                    <img class="greenCrystal" src="assets/images/green.png">
+                </div>
+</div><!-- end row -->
+</div><!-- end main container -->
+<!-- end crystal buttons here -->
+<br><br><br><br>
+<!-- a row class div to hold 2 col-md-6's -->
+<div class="row">
+<!-- start LEFT SIDE col-md-6 -->
+        <div class="col-md-6 text-center">
+            <div class="col-md-12">
+                <h2>Match This Number: <span class="numberDisplay"></h2>
+            </div>
+            <div class="col-md-12">
+                <h2>Your Total Score: <span class="guessDisplay">0</span></h2>
+            </div>
+        </div>
+<!-- end LEFT SIDE col-md-6 -->
+<!-- start RIGHT SIDE col-md-6 -->
+        <div class="col-md-6 text-center">
+            <div class="col-md-12">
+                <h2>Your Total Wins: <span id="winsDisplay">0</span></h2>
+            </div>
+            <div class="col-md-12">
+                <h2>Your Total Losses: <span id="lossesDisplay">0</span></h2>
+            </div>
+            </div>
+<!-- end RIGHT SIDE col-md-6 -->
+    </div><!-- close div class container -->
+<br><br><br><br><br><br>
+      <!-- footer -->
+      <div class="col-md-12">
+         <div class="footer push">
+            <footer class="footer text-center">
+               <div class="container">
+                  <p><a href="#">About Michael Clautice</a> | <a href="#">GitHub Repo</a>
+                     <br> &copy; 2017 Michael Clautice
+                  </p>
+               </div>
+            </footer>
+         </div>
+      </div>
+
+      <!-- ALL JAVASCRIPT AT THE BOTTOM OF THE PAGE FOR FASTER PAGE LOADING  -->
+
+      <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+</html>

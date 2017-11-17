@@ -1,0 +1,68 @@
+
+/* ARRG! I can't get my background-image to work! */
+
+body {
+    background-image: url("assets/images/wood.png");
+    background-image: url("assets/images/background.jpg");
+    background-color: yellow;
+}
+
+/* THIS IS MICHAEL CLAUTICE'S CRYSTAL COLLECTOR GAME */
+h1 {
+    font-family: 'Acme', sans-serif;
+    font-size: 50px;
+}
+
+
+h2 {
+    font-family: 'Acme', sans-serif;
+    font-size: 35px;
+}
+
+
+h3 {
+    font-family: 'Acme', sans-serif;
+    font-size: 30px;
+}
+
+p {
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+}
+
+img {
+    height:90px;
+    width:90px;
+    border:2px solid black;
+    border-radius: 10px
+}
+/* THIS IS MICHAEL CLAUTICE'S CRYSTAL COLLECTOR GAME */
+img:hover {
+    cursor: pointer;
+    box-shadow: 10px 10px 40px orange;
+}
+
+img:active {
+    box-shadow: 1px 1px 5px black;
+}
+
+h1, h2 {
+    text-shadow: 2px 2px red;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.instructions {
+    display: none;
+}
+
+.dropdown:hover {
+    cursor: pointer;
+}
+
+.stats p {
+    font-size: 25px;
+}
+/* THIS IS MICHAEL CLAUTICE'S CRYSTAL COLLECTOR GAME */
