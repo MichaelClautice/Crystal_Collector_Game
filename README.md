@@ -10,5 +10,5 @@
 ## Screenshots
 
 ![screenshot](https://github.com/MichaelClautice/Crystal_Collector_Game/blob/master/screenshots/Crystal_Collector.png)
-12
+
 
